@@ -15,11 +15,70 @@
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
     <div class="row">
         <div class="col-lg-6">
+          <h3>Top 10 Video Games of All Time (Hover To See Publisher)</h3>
+          <button type="button" class="btn btn-info" onclick="setData('Global_Sales')">Global</button>
+          <button type="button" class="btn btn-info" onclick="setData('NA_Sales')">North America</button>
             <div id="graph1"></div>
+            <h3>Most Popular Genres (By Region)</h3>
+            <button type="button" class="btn btn-info" onclick="setData2('Global_Sales')">Global</button>
+            <button type="button" class="btn btn-info" onclick="setData2('NA_Sales')">North America</button>
+            <button type="button" class="btn btn-info" onclick="setData2('EU_Sales')">Europe</button>
+            <button type="button" class="btn btn-info" onclick="setData2('JP_Sales')">Japan</button>
+            <button type="button" class="btn btn-info" onclick="setData2('Other_Sales')">Other</button>
             <div id="graph2"></div><br/>
         </div>
         <div class="col-lg-6">
+          <h3>Most Popular Publishers (By Genre)</h3>
+          <button type="button" class="btn btn-info" onclick="setData3(0)">Sports</button>
+          <button type="button" class="btn btn-info" onclick="setData3(1)">Platform</button>
+          <button type="button" class="btn btn-info" onclick="setData3(2)">Racing</button>
+          <button type="button" class="btn btn-info" onclick="setData3(3)">Role-Playing</button>
+          <button type="button" class="btn btn-info" onclick="setData3(4)">Puzzle</button>
+          <button type="button" class="btn btn-info" onclick="setData3(5)">Misc</button>
+          <button type="button" class="btn btn-info" onclick="setData3(6)">Shooter</button>
+          <button type="button" class="btn btn-info" onclick="setData3(7)">Simulation</button>
+          <button type="button" class="btn btn-info" onclick="setData3(8)">Action</button>
+          <button type="button" class="btn btn-info" onclick="setData3(9)">Fighting</button>
+          <button type="button" class="btn btn-info" onclick="setData3(10)">Adventure</button>
+          <button type="button" class="btn btn-info" onclick="setData3(11)">Strategy</button>
             <div id="graph3"></div>
+            <h3>Written Questions</h3>
+            <p>1. My dashboard has 3 graphs, which show the top 10 video games of all time, the most popular genres in
+              each region, and the most popular publishers for each genre. The first graph has a tooltip for each bar that
+              will show the publisher for each game. Each graph has a toggle button so you can switch between region,
+              genre, etc. This is useful particularly for the genres graph because one can see which genres are popular
+              in different regions of the world. It is also useful for the publishers graph to break it down by genre to
+              know which publisher to pick based on the genre.
+            </p>
+            <p>2. D3 was very helpul because it was very easy to customize any graphs/visualizations that I had. For example,
+            adding a tooltip to my first graph was fairly simple, as was adding toggle buttons. Another way it was helpful
+            is that most of the core code to create a visualization is the same, so once you've understood how to construct
+            a graph, reusing it for other graphs is pretty straightforward. Finally, the creation of the bar graphs was
+            definitely improved visually by D3 because each graph has properly sized bars, is not misleading, is labeled
+            very informatively, and it is very easy to see trends from each graph. Also, switching between buttons displays
+            the graph in a very user-friendly way.
+            </p>
+            <p>3. D3 would not be the best tool for creating a visualization because the documentation could be improved,
+              as it can be confusing for some of the types of graphs. Another reason D3 is not the best tool stems from its
+              lack of variety in visualization charts. For the video games dataset, very few types of graphs supported
+              by D3 were appropriate. Finally, modifying data for use in creating charts/graphs is not as easy as one would
+              like it to be.
+            </p>
+            <p>4. Users without disabilities who are looking for raw information would find this dashboard accessible. However,
+              other users, like blind users, would have more difficulty retrieving data from this dashboard because I do not have
+              a summary in text of each graph to explain the main trends of what I am displaying. Users who want access to the
+              full data would also be at a disadvantage because I have only provided the top 10 for each graph. Some actions
+              I could take to make this dashboard more accessible would be adding a small summary after each graph, and providing
+              full data so users have the choice to view it if they want. I could also visualize with something different than a
+              bar graph to add some variety, as that also would improve a user's experience.
+            </p>
+            <p>5. One factors that kept me from adding a summary at the end of my graphs was not even thinking about how a blind user
+              would interact with my dashboard. I did not provide the full data for my graphs because I originally thought that showing
+              less data is better. That is true, but it is always important to give the user both options, which I did not consider. Finally,
+              a lack of many options for displaying information that answered the questions for the video games dataset is what prevented
+              me from having a variety in my graphs. 
+              </thead>
+            </p>
         </div>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
